@@ -1,0 +1,23 @@
+{
+  "id" : "86d78919-3199-466c-812a-cf9bfa5406e4",
+  "request" : {
+    "urlPath" : "/body",
+    "method" : "PUT",
+    "headers" : {
+      "Content-Type" : {
+        "matches" : "application/json.*"
+      }
+    },
+    "bodyPatterns" : [ {
+      "matchesJsonPath" : "$[?(@.['part'] == 'heart')]"
+    }, {
+      "matchesJsonPath" : "$[?(@.['kind'] == 'A good one')]"
+    } ]
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"success\":\"Ou yeah\"}",
+    "transformers" : [ "response-template", "spring-cloud-contract" ]
+  },
+  "uuid" : "86d78919-3199-466c-812a-cf9bfa5406e4"
+}
