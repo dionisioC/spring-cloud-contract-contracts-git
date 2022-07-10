@@ -1,5 +1,5 @@
 {
-  "id" : "d4b7dc7f-a922-4c4f-bb8c-9123d334f763",
+  "id" : "be890dde-e5ac-493c-b8d4-8e404a8a73d4",
   "request" : {
     "urlPath" : "/body",
     "method" : "PUT",
@@ -19,5 +19,5 @@
     "body" : "{\"success\":\"Ou yeah\"}",
     "transformers" : [ "response-template", "spring-cloud-contract" ]
   },
-  "uuid" : "d4b7dc7f-a922-4c4f-bb8c-9123d334f763"
+  "uuid" : "be890dde-e5ac-493c-b8d4-8e404a8a73d4"
 }
